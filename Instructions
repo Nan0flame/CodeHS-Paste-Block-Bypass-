@@ -1,0 +1,10 @@
+Instructions
+Instructions:
+1A. First know whenever you refresh or move to next document you have to do this again; With all said, 
+1.first go to the document you want to be able to paste in.
+2.Next open inspect element.
+3.Once in console type allowPaste, (This is only to allow pasting into the actual console)
+5.Once done you can then paste the code below into the console which when entered your CodeHS editor can paste code. HOWEVER like I said youll have to paste the code everytime when moving to a new document. (Though you only have to do allowPaste every time you sign in)
+
+
+
