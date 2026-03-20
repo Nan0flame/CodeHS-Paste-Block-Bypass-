@@ -1,0 +1,25 @@
+window.addEventListener('paste', (e) => {
+       const text = (e.clipboardData || window.clipboardData).getData('text');
+    
+    if (window.ace) {
+        const editors = document.querySelectorAll('.ace_editor');
+        editors.forEach(el => {
+            const editor = ace.edit(el);
+            editor.insert(text);
+        });
+        
+        console.log("Manually injected text: " + text.substring(0, 20) + "...");
+    }
+}, true); 
+
+if (window.ace) {
+    const editors = document.querySelectorAll('.ace_editor');
+    editors.forEach(el => {
+        const editor = ace.edit(el);
+        editor.container.style.border = "2px solid #cf2519"; // Red border means it's working.
+        editor.setReadOnly(false);
+    });
+}
+
+console.log("");
+
